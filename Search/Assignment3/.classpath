@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="/Users/nawazkh/Masters/Courses/ILS_Z534_SEARCH/Assignments/Assignment 3/lucene4.10/commons-collections4-4.0.jar"/>
+	<classpathentry kind="lib" path="/Users/nawazkh/Masters/Courses/ILS_Z534_SEARCH/Assignments/Assignment 3/lucene4.10/commons-lang3-3.3.1.jar"/>
+	<classpathentry kind="lib" path="/Users/nawazkh/Masters/Courses/ILS_Z534_SEARCH/Assignments/Assignment 3/lucene4.10/lucene-analyzers-common-4.10.1.jar"/>
+	<classpathentry kind="lib" path="/Users/nawazkh/Masters/Courses/ILS_Z534_SEARCH/Assignments/Assignment 3/lucene4.10/lucene-queries-4.10.1.jar"/>
+	<classpathentry kind="lib" path="/Users/nawazkh/Masters/Courses/ILS_Z534_SEARCH/Assignments/Assignment 3/lucene4.10/lucene-queryparser-4.10.1.jar"/>
+	<classpathentry kind="lib" path="/Users/nawazkh/Masters/Courses/ILS_Z534_SEARCH/Assignments/Assignment 3/lucene4.10/lucene-core-4.10.1.jar"/>
+	<classpathentry kind="lib" path="/Users/nawazkh/Masters/Courses/ILS_Z534_SEARCH/Assignments/Assignment 3/jung2-2_0_1/jung-algorithms-2.0.1.jar"/>
+	<classpathentry kind="lib" path="/Users/nawazkh/Masters/Courses/ILS_Z534_SEARCH/Assignments/Assignment 3/jung2-2_0_1/jung-graph-impl-2.0.1.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
