@@ -1,0 +1,10 @@
+#
+# Created by Nawaz Hussain Khazielakha
+#
+1. extract the most referred nouns and plurals from the reviews from the users
+    visiting the city Charlotte.
+2. Based on the rating/stars of each restaurant, we calculate the popularity/weight
+    of a review and also the weight of the plural nouns/nouns extracted from the
+    reviews.
+3. Display the Restaurants with topic(given by the user) having highest rating
+    in the charlotte map.
