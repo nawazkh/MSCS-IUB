@@ -318,8 +318,6 @@ N = int(sys.argv[2])
 choice = str(sys.argv[1])
 rowExclude = int(sys.argv[3]) - 1
 colExclude = int(sys.argv[4]) - 1
-#just added a new comment to check git
-#added a new line of comment.
 #print "Initial params set"
 # The board is stored as a list-of-lists. Each inner list is a row of the board.
 # A zero in a given square indicates no piece, and a 1 indicates a piece.
