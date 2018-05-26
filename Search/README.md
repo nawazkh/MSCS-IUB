@@ -46,7 +46,7 @@ review.
 keywords(frequent words in the review) which will be proposed to the user.
 7) All the words are stored in dictionary with their corresponding id value and probability value.
 
-![top cuisines](https://github.com/nawazkh/MSCS-IUB/blob/master/Search/Task2-FinalProject/probilityMoreThan1point5.png)
+![top cuisines](https://github.com/nawazkh/MSCS-IUB/blob/master/Search/probilityMoreThan1point5.png)
 
 
 # Approach:
@@ -59,7 +59,7 @@ NNS) are weighted as per the ratings given to each business.
 Salad) and have a rating more than the given sample rating.
 ○ This HeatMap can be used by the user to judge the places which serve most popular (sample)
 
-![Sandwich popularity](https://github.com/nawazkh/MSCS-IUB/blob/master/Search/Task2-FinalProject/CategorySandwich_accuracy.png)
+![Sandwich popularity](https://github.com/nawazkh/MSCS-IUB/blob/master/Search/SaladDistribution.png)
 
-![Sandwich predicted](https://github.com/nawazkh/MSCS-IUB/blob/master/Search/Task2-FinalProject/CategorySandwich_rating3.png)
+![Sandwich predicted](https://github.com/nawazkh/MSCS-IUB/blob/master/Search/Salad_Accuracy.png)
 cuisines. The user can now chose a place strategically, if they want to setup their own business with the sample cuisine or not.
