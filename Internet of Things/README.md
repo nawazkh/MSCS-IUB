@@ -1,4 +1,10 @@
 # Internet of Things Mini projects
+# STAR project :
+Audio classification.
+## Aim: to classify audio sounds as a truck or non truck using on board machine learning.
+## Goal: To be able to run machine learning model like decision tree on the board and classify the audio in 3 seconds.
+## Achieved: Implemented decision trees, naive bayes, and power thresholding. Achieved 73% accuracy in onboard classification.
+## challenges: No floating point calculation on particle photon. All calculation happened on Q_31
 
 Worked With Particle Photon having the following features:
 1. Particle PØ Wi-Fi module
@@ -13,6 +19,9 @@ Worked With Particle Photon having the following features:
 10. Soft AP setup
 11. FCC, CE and IC certified
 
+
+
+Folders have the following in them:
 
   1. Room Occupency: Works upon Utilizing PIR sensor to control a room's power and updates a sheet in the google docs about th    change in the rooms status.
 
