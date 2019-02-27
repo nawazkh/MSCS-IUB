@@ -6,6 +6,8 @@ nawazkh - Nawaz Hussain K
 pkurusal - Pruthvi Raj Kurusala
 rpochamp - Rahul Pochampally
 
+Please refer to Assignment2Report.docx for our findings.
+
 Part 1: Custom Billboards (Image Warping and Homogeneous Matrix)
 
 ./a2 part1 poster_input.png
@@ -27,16 +29,6 @@ o	reference: https://github.com/lsolanka/armadillo/blob/master/examples/example1
 The lincoln_wrapped image generated has sharp uneven edges to the column pillars. This can be removed by applying the transformation on the smoothened image. Internal CImg’s blurring function was used to test our hypothesis.
 
 
-
-
-
-
-
-
-
-
-
-
 Part 2: Blending
 
 How to run:
@@ -46,10 +38,6 @@ How to run:
 Output file name: blended.png
 
 The first step in forming the composite image is to calculate the gaussian pyramids of the input images and the mask image. The gaussian level Gi is calculated by convolving Gi-1 with a gaussian kernel k which is given in the text and then down sampling it to half it’s resolution, i.e., if size of Gi-1 is (a x b) then size of Gi is (a/2 x b/2). Basically, Gi-1 is the down-sampled blurred version of Gi. We used the function “get_resize” for down-sampling the images. The output we got using the kernel was not satisfactory as there was a kind of patched layer when using the given kernel. So, to solve this I used the “get_blur” function from the “CImg” library where the variance of the kernel can be passed as a parameter. By trial and error, for variance (here variable ‘sigma’ is used in the code) value 4.0 we got the desired output. Also, we have normalized the mask gaussian images to (0,1) in the code using “normalize(0,1)”.(The images shown below are normalized to (0,255) for the images to be visible).      
-Below shown are the Gaussian Pyramid images of both the input images and the mask image.     
-
-
-
 
 The second step is to calculate the Laplacian pyramids of the gaussian pyramids by using the formula
 Li = Gi – Gi+1 for i=0 to 4 where Gi+1 is expanded to the size of Gi and then subtracted and L5 = G5. Generally, normalization to (0,255) scale is preferred after calculating the Laplacian to get the grey image but we chose to process the images without normalizing and normalize for the final composite image because this approach is giving us the better blended image than normalizing at each intermediate level. In this method we are not losing the intensities of the input image but in the other way we are getting a darker blended image. Below shown are the Laplacian pyramids for the input images.
@@ -63,27 +51,10 @@ The fourth and final step is to calculate the gaussian pyramid from the Laplacia
 		 G5= L5
 and 		Gi= Gi+1 + Li from i=4 to 0 where Gi+1 is up-sampled to the size of Li and then added. This stage the images are calculated from the top of the pyramid i.e., from 5th to 0th level. At each level of calculating the gaussian the image is normalized to the scale of (0,255). The final blended image is the image obtained at G0. Below are the final Gaussian pyramid images obtained.
 
-
 The final blended image is the last image shown above.
 
 
-
-
-
-
-
-
-
-
-
 Output Blended Image:
-
-
-
-
-
-
-
 
 Part 3: Image Matching and RANSAC
 
@@ -101,51 +72,7 @@ b.	In our case, threshold of 10 provides us best result.
 4.	Other images and their RANSAC outputs:
 We observed a few outliers in the output file even after filtering and thresholding. However, the outliers decreased by considerable amount:
 
-bigben_2 & bigben_3:
 
-SIFT:
-
-
-
-RANSAC:
-
-
-
-
-
-
-
-
-bigben_6 & bigben_8:
-
-SIFT:
-
-
-
-RANSAC:
-
-
-
-colosseum_4 & colosseum_5:
-SIFT:
-
-RANSAC:
-
-
-
-colosseum_3 & colosseum_8:
-
-SIFT:
-
-
-RANSAC:
-
-eiffel_2 & eiffel_5:
-
-SIFT:
-
-
-RANSAC:
 
 
 Part 4: Creating Multi-image panaroma:
@@ -161,13 +88,3 @@ Mask Width = first image descriptor length from left + second image descriptor l
 This process is continued for images from left to right.
 
 Transforming first half and second half:
-
-
-
-Stitching first and second half:
-
-
-Transforming Third image:
-
-
-Final Blended Image:
